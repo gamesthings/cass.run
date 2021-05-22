@@ -1,6 +1,7 @@
 {
-  "baseUrl": "https://masc.biz",
+  "baseUrl": "https://mason.url",
   "private": true,
+  "homepage": "http://mason.url",
   "scripts": {
     "shorten": "netlify-shortener"
   },
