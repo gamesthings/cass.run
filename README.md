@@ -1,7 +1,7 @@
 # masc.biz
 
 The Official Masc.Biz URL Shortener
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ef79a11e-2c90-4137-8bbf-388aa4057b1b/deploy-status)](https://app.netlify.com/sites/mascbizurl/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9cb93938-a381-40c3-afa1-b1ddd2a0aeca/deploy-status)](https://app.netlify.com/sites/mascbizurl/deploys)
 
 Clicking this button will clone the repo and deploy it to Netlify, be sure to rename your repo afterwards!
 
