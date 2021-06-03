@@ -1,0 +1,90 @@
+
+<!DOCTYPE HTML>
+
+<style>
+
+    #myCanvas {
+        background-color:#000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 640px;
+        height: 480px;
+        margin-top: -240px; 
+        margin-left: -320px;
+        display:block;  /* remove the scrollbars */
+    }
+
+    html, body {
+        width:  100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    body {
+        background-color:#000;
+    }
+    
+</style>
+
+<canvas id="myCanvas"></canvas>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32547137-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<script>
+
+    var canvas;
+    var ctx;
+
+    requestAnimationFrame =
+        window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        function(callback, element) { window.setTimeout(callback, 1000 / 60); };
+    
+    window.onload = function(){
+        canvas = document.getElementById("myCanvas");
+        canvas.width = 640;
+        canvas.height = 480;
+        ctx = canvas.getContext("2d");
+        render();
+    }
+    
+    function render() {
+        requestAnimationFrame(render);
+        draw();
+    }
+    
+    function draw() {
+    
+        canvas.width = canvas.width;
+   
+        ctx.beginPath();
+        
+        ctx.moveTo(Math.floor(Math.random()*canvas.width), Math.floor(Math.random()*canvas.height));
+        
+        for (i=0; i<100; i++)
+        {
+           
+           ctx.lineTo(Math.floor(Math.random()*canvas.width), Math.floor(Math.random()*canvas.height));
+                      
+        }
+    
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+    }
+
+</script>    
