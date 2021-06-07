@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    What were you expecting?
+ -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tiny Tuba</title>
+        <meta name="description" content="Sebastian's Tuba">
+        <style type="text/css">
+            html, body, table {
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+            }
+            audio {
+                display: none;
+                position: fixed;
+                margin-left: 1000000px;
+            }
+            img {
+                cursor: pointer;
+            }
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            var playCount = 0
+            function init() {
+                var tuba=document.getElementById("tuba"); 
+            }
+            function playSound() { 
+                tuba.load();
+                tuba.play();
+                playCount++
+            }
+            
+            $(function(){
+    $('#foo').click(function(){ 
+        if(!$('#iframe').length) {
+            
+                $('#iframeHolder').html('<iframe id="iframe" src="//player.vimeo.com/video/90429499" width="700" height="450"></iframe>');
+        }
+    });   
+});
+        </script>
+    </head>
+    <body onload="init();">
+        <table>
+            <tr>
+                <td>
+                    <img onclick="playSound();" id="foo" src="home/tuba.jpg" alt="">
+                    <audio controls="controls" id='tuba'>
+                        <source src="home/tuba.mp3" type="audio/mp3">
+                    </audio>
+                </td>
+            </tr>
+        </table>
+                    <div id="iframeHolder"></div>
+    </body>
+</html>
