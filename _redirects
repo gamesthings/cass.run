@@ -12,6 +12,7 @@
 /best       https://masc.biz/orange.png
 /github     https://github.com/mascbiz
 /dev        https://github.com/MascBizDev
+/template    https://github.com/MascBizDev/URLShortener-Template
 
 #fallback
 /*              https://masc.biz/error/404.html
