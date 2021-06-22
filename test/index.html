@@ -66,7 +66,13 @@
                 </div>
             </div>
         </nav>
-
+<div class="cookie-overlay p-4 d-none">
+  <div class="d-flex">
+    <div class="mr-3">By clicking the "Accept" button below, you agree to our <%= link_to 'Cookie Policy', cookies_url, target: '_blank' %>.</div>
+    <%= image_tag  "close.png", height: '21', class: 'close-cookies' %>
+  </div>
+  <button class="btn btn-primary mt-3 accept-cookies">Accept</button>
+</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
