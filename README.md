@@ -7,4 +7,4 @@ Clicking this button will clone the repo and deploy it to Netlify, be sure to re
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mascbiz/masc.biz&utm_source=github&utm_medium=shortener-cs&utm_campaign=devex)
 Backup Website Next
-https://mascbiz.github.io/masc.biz
+https://mascbiz.netlify.app
