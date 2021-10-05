@@ -1,5 +1,0 @@
-AuthName "Secret Folder"
-AuthType Basic
-AuthUserFile /admin/username/.htpasswds
-
-Require valid-user
