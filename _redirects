@@ -50,6 +50,7 @@
 /admin/?username=mascbiz&password=mascbiz           https://masc.biz/admin/loginsuccess
 /passwordshortcut         https://www.icloud.com/shortcuts/7d994d061a6e4dfca7190a84015366ae
 /bitrix                 https://mascbiz.bitrix24.com/?secret=nyzvcb94
+/account            https://bitrix24.net
 
 #fallback
 /*              https://mascbiz.builder.live/404
